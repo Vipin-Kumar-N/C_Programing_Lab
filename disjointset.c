@@ -1,3 +1,46 @@
+/*ALGORITHM
+Step 1:start
+Step 2:create a structure DisjSet with variables n,parent[10],rank[10]
+Step 3:read number of elements and assign to n
+Step 4:call makeset()
+Step 5:print 1.union,2.find,3.display
+Step 6:read a choice and assign to ch
+Step 7:if ch==1 then read the element to perform union and call union(x,y)
+Step 8:if ch==2 then read the element to check if connected components
+Step 9:if(find(x)==find(y)) then print connected components
+Step 10:else print not connected
+Step 11:ch==3 then call display()
+Step 12:stop
+
+Makeset
+Step 1:start
+Step 2:for i=0 to n
+Step 3:parent[i]=i;
+Step 4:rank[i]=0
+Step 5:stop
+
+Display disjoint set
+Step 1:start
+Step 2:for i=0 to dis.n
+Step 3:print parent
+Step 4:for i=0 to dis.n
+Step 5:print rank
+Step 6:find() of given item x then
+Step 7:if(parent[x]!=x) then
+Step 8:parent[x]=find(parent[x])
+Step 9:return parent[x]
+Step 10:stop
+
+Union of disjoint set
+Step 1:start
+Step 2:xset=find(x),yset=find(y)
+Step 3:if(xset==yset) then return they already in same set
+Step 4:else
+Step 5:parent[yset]=xset then
+Step 6: rank[xset] = rank[xset] + 1
+Step 7:dis.rank[yset]=-1
+Step 8:stop*/
+
 #include <stdio.h>
 struct DisjSet
 {

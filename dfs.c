@@ -1,3 +1,20 @@
+/*ALGORITHM
+Step 1:start
+Step 2:create a structure node with element vertex and *next
+Step 3:read number of vertices and assign to v
+Step 4:initialize adj[] with a null
+Step 5:read edges and insert them in adj[]
+Step 6:represent the edges into adjacency list
+Step 7:acquire only for the new node
+Step 8:insert the node in the new node
+Step 9:go to end of the linked list
+Step 10:keep an array visited[] to keep track of the visited vertices
+Step 11:if visited[i]=1 represent that vertex is has been visited before and the DFS function
+for some already visited node need not be called
+Step 12:repeat the step until all the vertex are visited
+Step 13:print the vertex
+Step 14:stop*/
+
 #include <stdio.h>
 struct node
 {
